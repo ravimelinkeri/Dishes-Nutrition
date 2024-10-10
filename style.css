@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #FFB22C;
+    background-color: #FFCFB3;
 }
 
 /* HEADER STYLE */
@@ -14,8 +14,8 @@ body{
     position: fixed;
     height: 40px;
     width: 100%;
-    background-color: #FFB22C;
-    color: #F3FEB8;
+    background-color: #FFF5CD;
+    color: #705C53;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,9 +24,13 @@ body{
 
 
 /* MAIN CONTAINER STYLE */
+.recipes-container-main{
+    display: flex;
+    justify-content: center;
+}
+
 .recipes-container{
-    margin-inline: 20px;
-    max-width: 1440px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     justify-content:space-around;
@@ -43,12 +47,13 @@ a{
     display: inline-block;
     width: 200px;
     height: auto;
-    background-color: #F3FEB8;
+    background-color: #FFF5CD;
     margin-inline: 20px;
     margin-top: 80px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 2px 4px ;
+    outline: none;
 }
 
 .Nutrition-del{
@@ -70,4 +75,22 @@ a{
 
 .bold{
     font-weight: bold;
+}
+
+.Footer{
+    position: static;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5CD;
+    color: #705C53;
+    box-shadow: 0 -1px 1px rgba(0 0  0.1);
+}
+
+.github-link{
+    color: inherit;
 }
