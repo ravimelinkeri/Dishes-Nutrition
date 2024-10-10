@@ -1,31 +1,37 @@
 const recipeContainer = document.querySelector('.recipes-container')
 
 
+fetch('https://ravimelinkeri.github.io/dishes_json/dishes.json')
+.then((res) => res.json())
+.then(data => 
+    data.forEach((Dish) =>{
+ 
+    //  console.log(Dish.name.Dishname);
 
 
-for(let recipe of recipes){
-
-    console.log(recipe)
-
+    
     const recipeCard = document.createElement('a')
     recipeCard.classList.add('recipe-card')
-    // recipeCard.href = `/recipe-details.html?name=${recipe.name}`
+    recipeCard.href = `recipe-details.html?name=${Dish.name.Dishname}`
 
     recipeCard.innerHTML = `
-     <img src="${recipe.img}" alt="img">
+     <img src="${Dish.name.img}" alt="img">
             <div class="small-intro">
-                <h3 class="title"> ${recipe.name} </h3>
-                <p><span class="bold">Type of Dish : </span>${recipe.typeofDish}</p>
+                <h3 class="title"> ${Dish.name.Dish} </h3>
+                <p><span class="bold">Type of Dish : </span>${Dish.name.typeofDish}</p>
                 <h3 class="Nutrition-del"> Nutrition</h3>
-                <p><span class="bold"> Calories : </span> ${recipe.nurtrition.Calories}</p>
-                <p><span class="bold"> Protein : </span>${recipe.nurtrition.Protein}</p>
-                <p><span class="bold"> Fibre : </span>${recipe.nurtrition.Fiber} </p>
-                <p><span class="bold"> Fat : </span>${recipe.nurtrition.Fat} </p>
-                <p><span class="bold"> Carbohydrates : </span>${recipe.nurtrition.Carbohydrates} </p>
+                <p><span class="bold"> Calories : </span> ${Dish.name.nurtrition.Calories}</p>
+                <p><span class="bold"> Protein : </span>${Dish.name.nurtrition.Protein}</p>
+                <h3 class="Nutrition-del"> Preparation Time</h3>
+                <p><span class="bold"> Time for Cook : </span>${Dish.name.totalTime} </p>
             </div>
 `
 
 
 recipeContainer.append(recipeCard)
-}
+     
+ 
+}))
+
+
 
