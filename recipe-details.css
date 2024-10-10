@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFCFB3;
+}
+
+.header{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: #FFF5CD;
+    color: #705C53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0 0  0.1);
+}
+
+.main-details-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.details-container{
+    width: 600px;
+    height: auto;
+    background-color: #FFF5CD;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-inline: 20px;
+    margin-bottom: 20px;
+}
+
+.dish-img{
+    height: 300px;
+    width: 100%;
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius:20px;
+}
+
+.recipe-heading{
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+
+.preparation-time{
+    margin-inline: 20px;
+    height: auto;
+    background-color: #F5E7B2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.time-heading{
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #FFB0B0;
+}
+
+.line{
+    margin-left: 25px;
+}
+
+.sub-sub-heading{
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sub-heading{
+    margin-block: 10px;
+    padding-left: 25px;
+    color: #FFB0B0;
+}
+
+.Ingredients{
+    padding-inline: 30px;
+    margin-block: 10px;
+}
+
+.divider{
+    margin-inline: 10px;
+}
+
+.list-instruction{
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.list-instruction li{
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+.nutrition-line{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Nutrition{
+    display: flex;
+    margin-block: 5px;
+    padding-left: 20px;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value{
+    color: #FFB0B0;
+    font-weight: 700;
+
+}
+
+
+.Footer{
+    position: static;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5CD;
+    color: #705C53;
+    box-shadow: 0 -1px 1px rgba(0 0  0.1);
+}
+
+.github-link{
+    color: inherit;
+}
