@@ -12,6 +12,7 @@ body{
 
 .header{
     position: fixed;
+    top: 0;
     height: 40px;
     width: 100%;
     background-color: #FFF5CD;
@@ -20,6 +21,41 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0 1px 1px rgba(0 0  0.1);
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon-input{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-top: 80px;
+    height: 40px;
+    width: 300px;
+    gap: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    
+}
+
+#search-icon{
+    padding-left: 7px;
+    border: none;
+    width: 25px;
+    
+}
+
+.searchbar input{
+    height: 30px;
+    width: 275px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: inherit;
 }
 
 
